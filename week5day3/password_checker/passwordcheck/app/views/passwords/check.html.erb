@@ -1,0 +1,10 @@
+<h1>Enter a username and password:</h1>
+<hr/>
+<form action="check_password" method="get">
+    <input type="text" name="username"/>
+    <input type="text" name="password"/>
+    <input type="submit" value="Enter"/>
+</form>
+
+<h2><%=@username %> <%=@password %></h2>
+<h3> <%=@un_valid %> <%=@pass_valid %></h3>

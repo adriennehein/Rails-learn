@@ -1,0 +1,14 @@
+<h1>Pick a number</h1>
+<h3>Your guess was: <%=@guess %></h3>
+
+<hr/>
+
+<form action="game" method="get">
+    <input type="number" name="guess" min="1" max="100" required/>
+    <input type="submit" name="Submit" />
+</form>
+
+<hr/>
+
+<h2><%=@win_status %></h2>
+<p><%=@secretnum %></p>
