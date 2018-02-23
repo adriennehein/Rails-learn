@@ -1,0 +1,26 @@
+<h1>Welcome to Car Simulator 3.0</h1>
+
+<!-- <h1><%= @car%></h1> -->
+
+
+<h2>Car name: <%= @car.name%></h2>
+<h2>Car year: <%= @car.year%></h2>
+<h2>Speed: <%= @car.speed%> MPH</h2>
+<h2>Lights: <%= @car.lights_status%></h2>
+<h2>E-Brake: <%= @car.ebrake_status %></h2>
+
+<form action="accelerate_car" method="get">
+    <input type="submit" value="Accelerate" />
+</form>
+<form action="brake_car" method="get">
+    <input type="submit" value="Brake" />
+</form>
+<form action="change_lights" method="get">
+    <input type="submit" value="Light Switch" />
+</form>
+
+<form action="change_ebrake" method="get">
+    <input type="radio" value="set" name="brake"/> Set <br/>
+    <input type="radio" value="release" name="brake"/> Release <br/>
+    <input type="submit" value="E-Brake" />
+</form>

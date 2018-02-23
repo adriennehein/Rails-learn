@@ -1,0 +1,20 @@
+<h1>Registration Confirmed!</h1>
+
+<%= flash[:logout] %>
+<h2>Log-In</h2>
+<%= flash[:error] %>
+
+<form action="check_credentials" method="get">
+    <h4>Username: </h4>
+    <input type="text" name="userlog"/>
+    <h4>Password: </h4>
+    <input type="text" name="passlog"/>
+    <input type="submit" value="Log In"/>
+</form>
+
+<h1>Check User Availability</h1>
+<%= flash[:invalid] %>
+<form action="register_new" method="get">
+    <input type="text" name="username" />
+    <input type="submit" value="Available?"/>
+</form>
