@@ -1,0 +1,9 @@
+<h1>You are permitted to play games now, <%= @check %>.</h1>
+<%=flash[:wrong]%>
+
+<h2>You must log in: </h2>
+  <form action="login" method="get">
+      <input type="text" name="username" placeholder="Username" autofocus/>
+      <input type="text" name="password" placeholder="Password" />
+      <input type="submit" value="Log In"/>
+  </form>

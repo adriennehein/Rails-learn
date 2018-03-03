@@ -1,0 +1,15 @@
+<h1>You must register before playing any games.<h1>
+    <%=flash[:register] %>
+
+    <form action="users/register" method="post">
+        <input type="text" name="name" placeholder="Full name" autofocus />
+        <input type="text" name="address" placeholder="Street address" />
+        <input type="text" name="city" placeholder="City" />
+        <input type="text" name="state" placeholder="State" />
+        <input type="text" name="zipcode" placeholder="Zipcode" />
+        <input type="text" name= "country" placeholder="Country" />
+        <input type="email" name="email" placeholder="Email"  />
+        <input type="text" name="username" placeholder="Username" />
+        <input type="text" name="password" placeholder="Password" />
+        <input type="submit" value="Execute" />
+    </form>
